@@ -115,7 +115,7 @@ class Column extends Component {
               col={col}
               index={index}
               onRequestMove={onCardRequestMove}
-              onRequestRemove={onCardRequestRemove}
+              onRequestRemove={event => onCardRequestRemove(event, index)}
               onRequestColorChange={color => onCardRequestColorChange(index, color)}
               {...item}
             />
